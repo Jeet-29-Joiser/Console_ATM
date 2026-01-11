@@ -9,16 +9,16 @@ fun main() {
         println("4. Exit")
         print("Enter choice: ")
 
-        when (readLine()!!.toInt()) {
+        when (readLine()?.toInt()) {
             1 -> atm.checkBalance()
             2 -> {
                 print("Enter deposit amount: ")
-                val amount = readLine()!!.toDouble()
+                val amount = readln().toDouble()
                 atm.deposit(amount)
             }
             3 -> {
                 print("Enter withdrawal amount: ")
-                val amount = readLine()!!.toDouble()
+                val amount = readln().toDouble()
                 atm.withdraw(amount)
             }
             4 -> {
